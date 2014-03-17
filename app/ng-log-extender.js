@@ -45,6 +45,7 @@ angular.module('ngLogExtender', [])
             return $delegate;
         });
 
+/*
         // TODO get rid of these stuff
         $routeProvider
             .when('/', {
@@ -54,6 +55,7 @@ angular.module('ngLogExtender', [])
             .otherwise({
                 redirectTo: '/'
             });
+*/
     });
 
 /*
