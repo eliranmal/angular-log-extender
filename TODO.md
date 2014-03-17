@@ -1,0 +1,1 @@
+- extract placeholder to config via e.g. $logProvider (decorate that as well?)
