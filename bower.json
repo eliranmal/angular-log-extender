@@ -6,7 +6,6 @@
         "angular": "~1.0.8"
     },
     "ignore": [
-        "app",
         "node_modules",
         "test",
         "dist",
