@@ -1,21 +1,18 @@
 {
     "name": "angular-log-extender",
     "version": "0.0.2",
-    "main": "app/ng-log-extender.js",
+    "main": "angular-log-extender.js",
     "dependencies": {
         "angular": "~1.0.8"
     },
     "ignore": [
-        "Gruntfile.js",
-        "karma.conf.js",
-        "karma-e2e.conf.js",
-        "manifest.json",
-        "package.json",
-        "TODO.md",
-        "**/.*",
+        "app",
         "test",
-        "app/*.html",
-        "app/styles",
-        "app/scripts"
+        "**/.*",
+        "TODO.md",
+        "Gruntfile.js",
+        "package.json",
+        "karma.conf.js",
+        "karma-e2e.conf.js"
     ]
 }

@@ -45,19 +45,4 @@ angular.module('ngLogExtender', [])
             return $delegate;
         });
 
-/*
-        // TODO get rid of these stuff
-        $routeProvider
-            .when('/', {
-                templateUrl: 'views/main.html',
-                controller: 'MainCtrl'
-            })
-            .otherwise({
-                redirectTo: '/'
-            });
-*/
     });
-
-/*
- * plunkr: http://plnkr.co/edit/CoBGvCZgWkuO51dsDrQz?p=preview
- */

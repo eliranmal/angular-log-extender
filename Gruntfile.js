@@ -229,6 +229,15 @@ module.exports = function (grunt) {
           src: [
             'generated/*'
           ]
+        },
+            // bower package registration
+            {
+          expand: true,
+          cwd: '<%= yeoman.app %>',
+          dest: './',
+          src: [
+            'angular-log-extender.js'
+          ]
         }]
       }
     },
