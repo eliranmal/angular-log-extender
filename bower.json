@@ -1,5 +1,5 @@
 {
-  "name": "ngLogExtender",
+  "name": "angular-log-extender",
     "version": "0.0.1",
     "main": "/scripts/app.js",
     "dependencies": {
