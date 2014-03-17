@@ -4,15 +4,5 @@
     "main": "app/ng-log-extender.js",
     "dependencies": {
         "angular": "~1.0.8"
-    },
-    "ignore": [
-        "node_modules",
-        "test",
-        "dist",
-        "**/.*",
-        "**/.*",
-        "**/*.css",
-        "**/*.json",
-        "**/*.html"
-    ]
+    }
 }
