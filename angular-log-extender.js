@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('ngLogExtender', [])
-    .config(function ($provide, $routeProvider) {
+    .config(function ($provide) {
 
         /**
          * matches and groups {}
