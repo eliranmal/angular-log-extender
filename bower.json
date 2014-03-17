@@ -1,11 +1,19 @@
 {
   "name": "angular-log-extender",
     "version": "0.0.2",
-    "main": "ng-log-extender.js",
+    "main": "app/ng-log-extender.js",
     "dependencies": {
         "angular": "~1.0.8"
     },
     "ignore": [
-        "**/*"
+        "app",
+        "node_modules",
+        "test",
+        "dist",
+        "**/.*",
+        "**/.*",
+        "**/*.css",
+        "**/*.json",
+        "**/*.html"
     ]
 }
