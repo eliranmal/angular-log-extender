@@ -323,16 +323,6 @@ module.exports = function (grunt) {
     'usemin'
   ]);
 
-  grunt.registerTask('publish', function (target) {
-//      grunt.log.writeln('registering: ', bower.commands.register);
-      try {
-          var logger = bower.commands.register('angular-log-extender', 'git://github.com/eliranmal/ng-log-extender.git');
-          grunt.log.writeln(logger._piped.toString());
-      } catch (e) {
-          grunt.log.writeln('error!', e);
-      }
-  });
-
   grunt.registerTask('default', [
     'jshint',
     'test',
