@@ -1,7 +1,7 @@
 {
     "name": "angular-log-extender",
     "version": "0.0.2",
-    "main": "app/angular-log-extender.js",
+    "main": "angular-log-extender.js",
     "dependencies": {
         "angular": "~1.2.14"
     },
@@ -9,9 +9,7 @@
         "angular-mocks": "~1.2.14"
     },
     "ignore": [
-        "app/styles",
-        "app/scripts",
-        "app/bower_components",
+        "app",
         "test",
         "**/.*",
         "TODO.md",
