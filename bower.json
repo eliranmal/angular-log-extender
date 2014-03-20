@@ -9,7 +9,9 @@
         "angular-mocks": "~1.2.14"
     },
     "ignore": [
-        "app",
+        "app/styles",
+        "app/scripts",
+        "app/bower_components",
         "test",
         "**/.*",
         "TODO.md",
