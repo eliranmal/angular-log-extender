@@ -6,6 +6,8 @@ var mountFolder = function (connect, dir) {
   return connect.static(require('path').resolve(dir));
 };
 
+var bower = require('bower');
+
 // # Globbing
 // for performance reasons we're only matching one level down:
 // 'test/spec/{,*/}*.js'
@@ -320,6 +322,16 @@ module.exports = function (grunt) {
     'rev',
     'usemin'
   ]);
+
+  grunt.registerTask('publish', function (target) {
+//      grunt.log.writeln('registering: ', bower.commands.register);
+      try {
+          var logger = bower.commands.register('angular-log-extender', 'git://github.com/eliranmal/ng-log-extender.git');
+          grunt.log.writeln(logger._piped.toString());
+      } catch (e) {
+          grunt.log.writeln('error!', e);
+      }
+  });
 
   grunt.registerTask('default', [
     'jshint',

@@ -2,7 +2,7 @@ describe("Unit: Testing Decorated Log Service", function () {
 
     beforeEach(angular.mock.module('ngLogExtender'));
 
-    it('should contain an $log service', inject(function ($log) {
+    it('should contain a $log service', inject(function ($log) {
         expect($log).toBeTruthy();
     }));
 
@@ -14,10 +14,11 @@ describe("Unit: Testing Decorated Log Service", function () {
         expect(typeof $log.debug).toBe('function');
     }]));
 
-    xit('should not break original functionality of $log service', inject(['$log', '$window', function ($log, $window) {
-        $log.info('hey hey hey');
-        spyOn($log, 'info').and.callThrough();
-        expect($log.info).toHaveBeenCalled();
+    it('should not break original functionality of $log service', inject(['$log', '$window', function ($log, $window) {
+        console.log($log.log.toString());
+        $log.log('hello {}!', 'world');
+//        spyOn($log, 'info').and.callThrough();
+//        expect($log.info).toHaveBeenCalled();
     }]));
 
 });

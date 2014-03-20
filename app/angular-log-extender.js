@@ -33,14 +33,17 @@ angular.module('ngLogExtender', [])
                     str = _format.apply(this, arguments);
                     return _fn.apply(this, [str]);
                 }
-                _fn.apply(this, arguments);
+                return _fn.apply(this, arguments);
             };
         }
 
         $provide.decorator('$log', function($delegate) {
             // mapping each function to a new implementation
             Object.keys($delegate).map(function (currentValue/*, index, array*/) {
-                _swap($delegate, currentValue);
+                if (currentValue === 'log') {
+                    return;
+                }
+                return _swap($delegate, currentValue);
             });
             return $delegate;
         });
