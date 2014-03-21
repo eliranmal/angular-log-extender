@@ -1,4 +1,4 @@
-ng-log-extender
+angular-log-extender
 ===============
 
 Added Capabilities for AngularJS $log.
