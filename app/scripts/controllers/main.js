@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('ngLogExtender')
+angular.module('logExtender')
     .controller('MainCtrl', function ($scope, $log) {
 
         $log.log('this is a log message with a string [{}], a number [{}], a boolean [{}] and an object [{}]',

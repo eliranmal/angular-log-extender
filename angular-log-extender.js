@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('ngLogExtender', [])
+angular.module('logExtender', [])
     .config(function ($provide) {
 
         /**

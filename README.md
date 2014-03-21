@@ -19,5 +19,5 @@ Install via bower:
     
 Include the dependency in the module definition:
 
-    angular.module('myModule', ['ngLogExtender']);
+    angular.module('myModule', ['logExtender']);
     

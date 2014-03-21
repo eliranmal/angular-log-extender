@@ -1,6 +1,6 @@
 describe("Unit: Testing Decorated Log Service", function () {
 
-    beforeEach(angular.mock.module('ngLogExtender'));
+    beforeEach(angular.mock.module('logExtender'));
 
     it('should contain a $log service', inject(function ($log) {
         expect($log).toBeTruthy();
